@@ -5,10 +5,8 @@
   "author": "Tomek",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack -d",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "npm run build:prod"
@@ -22,13 +20,8 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^1.0.0",
-    "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "enzyme-to-json": "^3.3.4",
     "express": "^4.16.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "jest": "20.0.4",
-    "live-server": "^1.2.0",
     "moment": "^2.22.2",
     "node-sass": "^4.9.4",
     "normalize.css": "7.0.0",
@@ -40,7 +33,6 @@
     "react-redux": "5.0.5",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-test-renderer": "^16.5.2",
     "redux": "3.7.2",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
@@ -49,7 +41,13 @@
     "webpack": "^4.22.0"
   },
   "devDependencies": {
+    "chalk": "^2.4.1",
     "prettier": "1.14.3",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "20.0.4",
+    "react-test-renderer": "^16.5.2"
   }
 }
