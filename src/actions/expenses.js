@@ -40,3 +40,12 @@ export const editExpense = (id, updates) => ({
   id,
   updates
 });
+
+// SET _ EXPENSES
+
+export const setExpenses = expenses => ({
+  type: "SET_EXPENSES",
+  expenses
+});
+
+// export const startSetExpenses
