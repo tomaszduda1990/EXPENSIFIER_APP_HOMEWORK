@@ -1,12 +1,12 @@
 import * as firebase from "firebase";
-import expenses from "../selectors/expenses";
+
 const config = {
-  apiKey: "AIzaSyBaucujsTrlTHN3d6Z-MjL-lYbmcWy4TF0",
-  authDomain: "expense-tracker-ca13b.firebaseapp.com",
-  databaseURL: "https://expense-tracker-ca13b.firebaseio.com",
-  projectId: "expense-tracker-ca13b",
-  storageBucket: "expense-tracker-ca13b.appspot.com",
-  messagingSenderId: "545660500727"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.FIREBASE_DATABASE_URL,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID
 };
 firebase.initializeApp(config);
 

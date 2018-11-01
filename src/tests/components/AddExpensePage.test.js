@@ -3,14 +3,14 @@ import React from "react";
 import { AddExpensePage } from "../../components/AddExpensePage";
 import expenses from "../fixtures/expenses";
 
-let addExpense, history, wrapper;
+let startAddExpense, history, wrapper;
 beforeEach(() => {
-  addExpense = jest.fn();
+  startAddExpense = jest.fn();
   history = {
     push: jest.fn()
   };
   wrapper = shallow(
-    <AddExpensePage history={history} addExpense={addExpense} />
+    <AddExpensePage history={history} startAddExpense={startAddExpense} />
   );
 });
 
@@ -35,5 +35,5 @@ test("should handle onSubmit", () => {
   //   );
   wrapper.find("ExpenseForm").prop("onSubmit")(expenses[1]);
   expect(history.push).toHaveBeenLastCalledWith("/");
-  expect(addExpense).toHaveBeenLastCalledWith(expenses[1]);
+  expect(startAddExpense).toHaveBeenLastCalledWith(expenses[1]);
 });
