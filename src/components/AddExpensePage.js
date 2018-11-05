@@ -9,7 +9,7 @@ export class AddExpensePage extends React.Component {
   onSubmit = expense => {
     // props.dispatch(addExpense(expense));
     this.props.startAddExpense(expense); // added mapDispatch to props so the component is more testable :)
-    this.props.history.push("/");
+    this.props.history.push("/dashboard");
   };
   render() {
     return (
