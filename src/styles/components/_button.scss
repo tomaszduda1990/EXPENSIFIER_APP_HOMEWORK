@@ -1,0 +1,23 @@
+.button {
+  color: #fff;
+  padding: $s-size $l-size;
+  border-radius: 3px;
+  font-weight: 700;
+  display: inline-block;
+  font-size: $font-size-large;
+  border: 1px solid $dark-grey;
+  background-color: $blue;
+  margin-top: $l-size;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  line-height: 1;
+}
+.button:hover {
+  background-color: lighten($blue, 15);
+}
+.button--danger {
+  background: tomato;
+}
+.button--danger:hover {
+  background-color: lighten(tomato, 15);
+}
