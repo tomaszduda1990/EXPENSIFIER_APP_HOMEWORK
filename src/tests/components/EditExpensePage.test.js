@@ -28,10 +28,10 @@ test("should run onSubmit with edited data", () => {
     expenses[2].id,
     expenses[2]
   );
-  expect(history.push).toHaveBeenLastCalledWith("/");
+  expect(history.push).toHaveBeenLastCalledWith("/dashboard");
 });
 test("should run onRemove", () => {
   wrapper.find("button").simulate("click");
   expect(startRemoveExpense).toHaveBeenLastCalledWith({ id: expenses[2].id });
-  expect(history.push).toHaveBeenLastCalledWith("/");
+  expect(history.push).toHaveBeenLastCalledWith("/dashboard");
 });
